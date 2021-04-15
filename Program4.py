@@ -1,9 +1,9 @@
 import matplotlib.pyplot as plt
 import pandas as pd
 
-data = pd.read_csv("GBvideos.csv")
+data = pd.read_csv("annual.csv")
 
-category_count = data['category_id'].value_counts()
+category_count = data['Date'].value_counts()
 
 
 ax = category_count.plot.bar()
